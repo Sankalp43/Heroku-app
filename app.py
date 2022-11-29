@@ -14,6 +14,8 @@ This app predicts the credit card approval probablity
 st.header('User Input Parameters')
 
 def user_input_features():
+    number_1 = st.number_input('Insert first number')
+    number_2 = st.number_input('Insert Second number')
     gender = st.selectbox("CODE_GENDER",('M','F'))
     own_car = st.selectbox("FLAG_OWN_CAR",('Y','N'))
     own_realty = st.selectbox("FLAG_OWN_REALTY",('Y','N'))
@@ -30,7 +32,9 @@ def user_input_features():
     name_family_status = st.selectbox("NAME_FAMILY_STATUS",('Civil marriage', 'Married', 'Single / not married', 'Separated','Widow'))
     name_housing_type = st.selectbox("NAME_HOUSING_TYPE",('Rented apartment', 'House / apartment', 'Municipal apartment','With parents', 'Co-op apartment', 'Office apartment'))
 
-    data = {'CNT_CHILDREN': cnt_children,
+    data = {'First_Number' : number_1,
+            'Second_Number' : number_2,
+            'CNT_CHILDREN': cnt_children,
             'AMT_INCOME_TOTAL': amt_income_total,
             'NAME_INCOME_TYPE': name_income_type,
             'NAME_EDUCATION_TYPE': name_education_type,
