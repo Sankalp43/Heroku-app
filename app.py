@@ -3,9 +3,9 @@ import pandas as pd
 
 
 st.write("""
-# Summation APP
+# Multiplication APP
 
-This app sums up two numbers.
+This app multiply two numbers.
 """)
 #Get Input
 
@@ -29,4 +29,4 @@ st.write(df.to_dict())
 
 st.subheader('Result')
 sum = number_1 + number_2
-st.write(f'Summation of numbers is: {sum}')
+st.write(f'Product of numbers is: {sum}')
