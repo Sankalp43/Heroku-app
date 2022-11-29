@@ -58,6 +58,10 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df.to_dict())
 
+a = df.to_dict()
+number_1 = a["First_Number"]
+numbet_2 = a["Second_Number"]
+
 #Preprocessing
 
 # binary_features = ['CODE_GENDER','FLAG_OWN_CAR','FLAG_OWN_REALTY','FLAG_WORK_PHONE','FLAG_EMAIL']
