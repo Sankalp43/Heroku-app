@@ -125,5 +125,5 @@ st.subheader('Result')
 # #st.write(prediction)
 
 # st.subheader('Prediction Probability')
-sum = number_1 + number_2
+sum = number_1["0"] + number_2["0"]
 st.write(sum)
