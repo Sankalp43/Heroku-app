@@ -51,16 +51,16 @@ def user_input_features():
 #             'FLAG_EMAIL': own_email
             }
     features = pd.DataFrame(data, index=[0])
-    return features
+    return features , number_1 , number_2
 
-df = user_input_features()
+df , number_1 , number_2 = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df.to_dict())
 
-a = df.to_dict()
-number_1 = a["First_Number"]
-numbet_2 = a["Second_Number"]
+# a = df.to_dict()
+# number_1 = a["First_Number"]
+# numbet_2 = a["Second_Number"]
 
 #Preprocessing
 
@@ -125,5 +125,5 @@ st.subheader('Result')
 # #st.write(prediction)
 
 # st.subheader('Prediction Probability')
-sum = number_1["0"] + number_2["0"]
+sum = number_1 + number_2
 st.write(sum)
