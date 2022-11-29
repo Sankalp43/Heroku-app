@@ -28,5 +28,5 @@ st.subheader('User Input parameters')
 st.write(df.to_dict())
 
 st.subheader('Result')
-sum = number_1 + number_2
-st.write(f'Product of numbers is: {sum}')
+p = number_1 * number_2
+st.write(f'Product of numbers is: {p}')
